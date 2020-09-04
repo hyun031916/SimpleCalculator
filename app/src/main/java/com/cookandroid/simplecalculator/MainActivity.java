@@ -18,6 +18,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setTitle("초간단 계산기");
 
+        edit1 = (EditText)findViewById(R.id.Edit1);
+        edit2 = (EditText)findViewById(R.id.Edit2);
+        btnAdd = (Button)findViewById(R.id.BtnAdd);
+//        btnSub = (Button)findViewById(R.id.BtnSub);
+//        btnMul = (Button)findViewById(R.id.BtnMul);
+//        btnDiv = (Button)findViewById(R.id.BtnDiv);
+        textResult = (TextView)findViewById(R.id.TextResult);
     }
 }
