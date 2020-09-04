@@ -3,6 +3,8 @@ package com.cookandroid.simplecalculator;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.MotionEvent;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -26,6 +28,18 @@ public class MainActivity extends AppCompatActivity {
 //        btnSub = (Button)findViewById(R.id.BtnSub);
 //        btnMul = (Button)findViewById(R.id.BtnMul);
 //        btnDiv = (Button)findViewById(R.id.BtnDiv);
+
         textResult = (TextView)findViewById(R.id.TextResult);
+
+        btnAdd.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                num1 = edit1.getText().toString();
+                num2 = edit2.getText().toString();
+                result = Integer.parseInt(num1)+Integer.parseInt(num2);
+                textResult.setText("계산 결과 : "+result.toString());
+                return false;
+            }
+        });
     }
 }
