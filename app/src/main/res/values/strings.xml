@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">SimpleCalculator</string>
+
+    <string name="BtnAdd">더하기</string>
+    <string name="BtnSub">빼기</string>
+    <string name="BtnMul">곱기</string>
+    <string name="BtnDiv">나누기</string>
 </resources>
